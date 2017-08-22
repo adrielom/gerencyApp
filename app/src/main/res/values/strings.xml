@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GerenceApp</string>
+    <string name="hintLoginEmail">Email</string>
+    <string name="hintLoginPassword">Senha</string>
+    <string name="keepMeConnected">Mantenha-me Conectado</string>
+    <string name="loginButton">Continuar</string>
+    <string name="createNewAccount">Criar nova conta</string>
 </resources>
