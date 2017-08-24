@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/itemNameProjectsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"
+        android:text="TextView"
+        tools:ignore="HardcodedText,InefficientWeight,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/itemDueDateProjectsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,InefficientWeight,ObsoleteLayoutParam"
+        android:layout_marginTop="28dp"
+        android:layout_alignTop="@+id/itemNameProjectsList"
+        android:layout_alignStart="@+id/itemNameProjectsList" />
+
+</RelativeLayout>
