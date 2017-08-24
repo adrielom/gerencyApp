@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.example.adriel.gerenceapp.ProjectsListActivity">
+    tools:context="com.example.adriel.gerenceapp.projectsSelectionFolder.ProjectsListActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbarSelectProjects"

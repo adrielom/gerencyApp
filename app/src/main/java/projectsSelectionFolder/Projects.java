@@ -1,4 +1,4 @@
-package com.example.adriel.gerenceapp;
+package projectsSelectionFolder;
 
 /**
  * Created by Adriel on 24/08/2017.

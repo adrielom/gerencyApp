@@ -1,5 +1,6 @@
 package com.example.adriel.gerenceapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +8,14 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.MotionEvent;
+
+import com.example.adriel.gerenceapp.R;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import projectsSelectionFolder.ItemProjectsAdapter;
+import projectsSelectionFolder.Projects;
 
 public class ProjectsListActivity extends AppCompatActivity {
 
@@ -27,16 +33,7 @@ public class ProjectsListActivity extends AppCompatActivity {
         projectses.add(new Projects("PENIS", "JFDSFS"));
         projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
         projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
-        projectses.add(new Projects("FSDKJFLSD", "3948HK42342342"));
+
 
         //Toolbar
         SetToolbar();
@@ -54,12 +51,6 @@ public class ProjectsListActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
-        adapter.setOnItemClickListener(new ItemProjectsAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(Projects item) {
-
-            }
-        });
     }
 
 

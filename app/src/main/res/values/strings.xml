@@ -6,4 +6,8 @@
     <string name="loginButton">Continuar</string>
     <string name="ProjectsListActivity">Projetos</string>
     <string name="createNewAccount">Criar nova conta</string>
+    <string name="title_activity_project_main">ProjectMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

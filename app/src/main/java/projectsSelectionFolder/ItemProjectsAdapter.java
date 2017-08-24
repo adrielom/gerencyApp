@@ -1,11 +1,15 @@
-package com.example.adriel.gerenceapp;
+package projectsSelectionFolder;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.adriel.gerenceapp.ProjectMainActivity;
+import com.example.adriel.gerenceapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +20,14 @@ import java.util.List;
 
 public class ItemProjectsAdapter extends RecyclerView.Adapter<ItemProjectsAdapter.ProjectsListHolder>{
 
-     List<Projects> projects = new ArrayList<>();
-     private LayoutInflater mInflater;
+    List<Projects> projects = new ArrayList<>();
+    private LayoutInflater mInflater;
+    Context context;
 
     public ItemProjectsAdapter(Context context, ArrayList projects) {
         this.projects = projects;
-        mInflater = LayoutInflater.from(context);
+        this.mInflater = LayoutInflater.from(context);
+        this.context = context;
     }
 
     @Override
@@ -43,7 +49,7 @@ public class ItemProjectsAdapter extends RecyclerView.Adapter<ItemProjectsAdapte
     }
 
 
-    public class ProjectsListHolder extends RecyclerView.ViewHolder {
+    public class ProjectsListHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
 
         public TextView nameText, dueDateText;
@@ -53,22 +59,17 @@ public class ItemProjectsAdapter extends RecyclerView.Adapter<ItemProjectsAdapte
 
             nameText = (TextView) itemView.findViewById(R.id.itemNameProjectsList);
             dueDateText = (TextView) itemView.findViewById(R.id.itemDueDateProjectsList);
+            itemView.setOnClickListener(this);
         }
 
+        @Override
+        public void onClick(View v) {
+            context.startActivity(new Intent(context, ProjectMainActivity.class));
+        }
     }
 
     public interface OnItemClickListener {
         void onItemClick(Projects item);
-    }
-
-    private OnItemClickListener onItemClickListener;
-
-    public OnItemClickListener getOnItemClickListener() {
-        return onItemClickListener;
-    }
-
-    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
-        this.onItemClickListener = onItemClickListener;
     }
 
     public void updateList(Projects project) {
