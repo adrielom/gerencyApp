@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_metrics"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/metrics" />
+
+    <item
+        android:id="@+id/navigation_pipeline"
+        android:icon="@drawable/ic_pipeline"
+        android:title="@string/pipeline" />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_message"
+        android:title="@string/pipeline" />
+
+</menu>
